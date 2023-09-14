@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6SnZ8AYcD17+/+UG8UrMWfLB8reTpb29nXJbF+OFOuiVH6Qj7tX9uOM93i2KoI8KDNOf2bZvIDAyY8ftohhsrw==",
+  "dgSpecHash": "KE56E4KtWN52el9StX89wLC/xaYN5xQEdAiPdLbJFdy7RtcprB4luW9c5ImDL1RBNswc9EyygBS8PYXCEV1IaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Saura\\source\\repos\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj",
+  "projectFilePath": "C:\\Users\\Saura\\OneDrive\\Desktop\\PocG7\\Back_end\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saura\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Saura\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

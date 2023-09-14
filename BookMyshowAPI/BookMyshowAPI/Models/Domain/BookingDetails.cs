@@ -20,6 +20,6 @@ namespace BookMyshowAPI.Models.Domain
 
         public string SeatNo { get; set; } = string.Empty;
 
-        public double TotalAmount { get; set; }
+        public decimal TotalAmount { get; set; }
     }
 }

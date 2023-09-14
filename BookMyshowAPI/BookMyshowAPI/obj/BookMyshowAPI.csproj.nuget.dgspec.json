@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Saura\\source\\repos\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj": {}
+    "C:\\Users\\Saura\\OneDrive\\Desktop\\PocG7\\Back_end\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Saura\\source\\repos\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj": {
+    "C:\\Users\\Saura\\OneDrive\\Desktop\\PocG7\\Back_end\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Saura\\source\\repos\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Saura\\OneDrive\\Desktop\\PocG7\\Back_end\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj",
         "projectName": "BookMyshowAPI",
-        "projectPath": "C:\\Users\\Saura\\source\\repos\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj",
+        "projectPath": "C:\\Users\\Saura\\OneDrive\\Desktop\\PocG7\\Back_end\\BookMyshowAPI\\BookMyshowAPI\\BookMyshowAPI.csproj",
         "packagesPath": "C:\\Users\\Saura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Saura\\source\\repos\\BookMyshowAPI\\BookMyshowAPI\\obj\\",
+        "outputPath": "C:\\Users\\Saura\\OneDrive\\Desktop\\PocG7\\Back_end\\BookMyshowAPI\\BookMyshowAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Saura\\AppData\\Roaming\\NuGet\\NuGet.Config",
