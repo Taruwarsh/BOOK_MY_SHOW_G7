@@ -1,2 +1,0 @@
-"# BOOK_MY_SHOW_G7" 
-"# BOOK_MY_SHOW_G7" 
