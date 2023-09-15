@@ -12,6 +12,7 @@ import NavBar from "./Components/NavBar"
 import AuthForm from "./Components/AuthForm"
 import BookingForm from "./Components/BookingForm";
 import BookSeat from "./Components/BookSeat";
+import PaymentModel from "./Components/PaymentModel";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.params = {};
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/movie/:id" element={<MoviePage />} />
+        < Route path="/payment/:id" element={<PaymentModel />} />
         <Route path="/plays" element={<Plays />} />
         <Route path="/authform" element={<AuthForm />} />
         <Route path ="/booking" element={<BookingForm/>}/>

@@ -85,8 +85,8 @@ function NavLg() {
               <div><span><img src="https://assets-in.bmscdn.com/members/common/icons/rewards.png" class="sc-gRnDUn gMMdZt" /></span><span><p>Rewards<br />View your rewards & unlock new ones</p></span><span></span></div>
               <div><span><img src="https://assets-in.bmscdn.com/members/common/icons/bookasmile.png" class="sc-gRnDUn gMMdZt" /></span><span>BookASmile</span><span></span></div>
               {tokens ? <button onClick={() => {
-                dispatch(addToken(null));
                 localStorage.removeItem('token');
+                localStorage.removeItem('city');
                 window.location.href = '/';
               }} style={{ 'padding': '14px', width: '300px', marginTop: '100px', color: "#f84464", fontSize: '20px', backgroundColor: 'transparent', borderColor: '#f84464' }}>Signout</button> : ""}
             </div>
