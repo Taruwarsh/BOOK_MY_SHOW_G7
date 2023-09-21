@@ -1,7 +1,7 @@
 // src/components/BookingForm.js
 import { useSelector, useDispatch } from "react-redux";
 import { selectDate, selectTimeSlot } from "../Reducers/booking/action";
-
+import { useState } from "react";
 
 import React, { useContext } from "react";
 import MovieHero from "../Components/MovieHero";
@@ -14,6 +14,9 @@ const BookingForm = () => {
   const selectedTimeSlot = useSelector(
     (state) => state.booking?.selectedTimeSlot
   );
+
+  const [selDate, setSelDate] = useState('');
+  const [selTime, setSelTime] = useState('');
 
   // Get the current date
   const currentDate = new Date();
@@ -39,13 +42,15 @@ const BookingForm = () => {
     formatDate(dayAfterTomorrowDate),
   ];
 
-  const timeSlots = ["10:00 AM", "2:00 PM", "6:00 PM"]; // Replace with your time slot data
+  const timeSlots = ["6:00 PM", "9:00 PM", "12:00 PM"]; // Replace with your time slot data
 
   const handleDateChange = (date) => {
+    setSelDate(date);
     dispatch(selectDate(date));
   };
 
   const handleTimeSlotChange = (timeSlot) => {
+    setSelTime(timeSlot);
     dispatch(selectTimeSlot(timeSlot));
   };
 
@@ -93,11 +98,11 @@ const BookingForm = () => {
         </div>
         <div className="m-4 p-4">
           <p className="text-lg m-4 p-4 font-semibold">
-            Selected Date:{" "}
+            Selected Date: {selDate}
             <span className=" p-2 bg-blue-600">{selectedDate}</span>
           </p>
           <p className="text-lg  m-4 p-4 font-semibold">
-            Selected Time Slot:{" "}
+            Selected Time Slot: {selTime}
             <span className="p-2 bg-blue-600">{selectedTimeSlot}</span>
           </p>
 <Link to ="/bookseat">
@@ -115,4 +120,3 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
-
