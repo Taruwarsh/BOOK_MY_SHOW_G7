@@ -6,8 +6,7 @@ import { MovieContext } from "../Context/MovieContext";
 import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
 import PaymentModel from "./PaymentModel";
-import Swal from 'sweetalert2';
-
+import Swal from "sweetalert2";
 
 export default function Bookticket(props) {
   const { price, setIsOpen, isOpen, buyTickets } = useContext(MovieContext);
@@ -28,10 +27,16 @@ export default function Bookticket(props) {
       }
     }
   }
-
-  // function buttonclick(){
-  //   Swal.fire("booked succesfully");
-  // }
+  const checkoutToPayment= async(price)=>{
+    await PaymentModel(price);
+   }
+  function buttonclick(){
+    Swal.fire("Booked Succesfully");
+    setTimeout(() => {
+      navigate("/");
+     
+    },3000);
+  }
   const navigate = useNavigate();
   let tl = gsap.timeline({ ease: "power1.in" });
   let clicked = false;
@@ -60,11 +65,13 @@ export default function Bookticket(props) {
     };
 
     fetch(`https://book-my-show-back-end.onrender.com/booking${props.name}`, fetchoption);
-   
+  
   }
   return (
     <body1>
-      <PaymentModel setIsOpen={setIsOpen} isOpen={isOpen} price={price} />
+      
+      {/* <PaymentModel setIsOpen={setIsOpen} isOpen={isOpen} price={price} /> */}
+      
       <ul className="showcase">
         <li>
           <div className="seat selected"></div>
@@ -163,7 +170,7 @@ export default function Bookticket(props) {
             </p>
             <body2>
               {" "}
-              <div onClick={buyTickets} id="button">
+              <div onClick={buttonclick} id="button">
                 <span id="text">Book</span>
                 <span ref={ref} id="w">
                   ✓
